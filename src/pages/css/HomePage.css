@@ -1,0 +1,78 @@
+/* HomePage.css */
+
+/* Basic reset and body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container for centering content */
+  .homepage {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  /* Heading styling */
+  .homepage-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styling */
+  .homepage-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* List styling */
+  .homepage-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  /* Styling for list items */
+  .homepage-link-item {
+    margin: 15px 0;
+  }
+  
+  /* Link buttons */
+  .homepage-link {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #3498db;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effects for links */
+  .homepage-link:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .homepage-title {
+      font-size: 2rem;
+    }
+    .homepage-description {
+      font-size: 1rem;
+    }
+    .homepage-link {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
