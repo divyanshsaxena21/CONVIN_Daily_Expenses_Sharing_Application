@@ -4,6 +4,9 @@ const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 const expenseRoutes = require('./routes/expenseRoutes');
 const { errorHandler } = require('./middleware/errorHandler');
+const app = express();
+const cors = require('cors');
+app.use(cors());
 
 // Load environment variables
 dotenv.config({ path: '../.env' });
@@ -12,7 +15,6 @@ dotenv.config({ path: '../.env' });
 connectDB();
 
 // Initialize Express app
-const app = express();
 
 // Body parser middleware
 app.use(express.json());
